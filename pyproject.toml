@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "pisrs-scraper"
+version = "0.1.0"
+description = ""
+authors = ["Andraz Vrhovec <andraz@koofr.net>"]
+readme = "README.md"
+packages = [{include = "pisrs_scraper"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+scrapy = "^2.7.0"
+dataclasses-json = "^0.5.7"
+
+
+[tool.poetry.group.dev.dependencies]
+betamax = "^0.8.1"
+pytest = "^7.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
